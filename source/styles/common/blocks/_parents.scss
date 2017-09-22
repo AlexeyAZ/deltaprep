@@ -1,0 +1,39 @@
+.parents {
+    &__heading-double-color {
+        background: linear-gradient(-60deg, $link-gold 0%, $link-gold 63%, black 37%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    &__gallery {
+        margin: 50px 0;
+        width: 100%;
+        &:before {
+            top: -100px;
+            left: calc(74% - 3px);
+            height: 480px;
+            width: 2px;
+        }
+    }
+    &__gallery-item {
+        height: $parents-gallery-height;
+    }
+    &__gallery-img {
+        height: $parents-gallery-height;
+        width: $parents-gallery-height + 100px;
+    }
+    &__video {
+        float: right;
+        clear: both;
+        margin-left: 30px;
+        margin-bottom: 20px;
+    }
+    &__video-container {
+        background-image: url("../images/video-decor.png");
+        background-repeat: no-repeat;
+        background-position: right 90px top;
+    }
+    &__video-text {
+        //float: left;
+        //width: calc(100% - #{$media-block-width} - 30px);
+    }
+}

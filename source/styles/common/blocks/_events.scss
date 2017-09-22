@@ -1,0 +1,327 @@
+.events {
+    &__gallery {
+        &:before {
+            top: -100px;
+            left: calc(51% + 6px);
+            height: 480px;
+            width: 2px;
+        }
+    }
+    &__gallery-item {
+        height: $events-gallery-height;
+        &:before {
+            background-color: $events-gallery-gold-bg;
+            left: calc(-50% + 40px);
+        }
+    }
+    &__gallery-text {
+        align-content: flex-start;
+        padding: 20px 0 0 $padding-left-right-xl;
+        color: white;
+        width: 50%;
+    }
+    &__gallery-date {
+        display: flex;
+        font-family: 'MinionPro-Semibold', sans-serif;
+        text-shadow: 0 2px 2px rgba(0,0,0,0.1);
+        width: 100%;
+    }
+    &__gallery-date-item {
+        display: flex;
+        align-items: center;
+        align-content: center;
+        flex-wrap: wrap;
+    }
+    &__gallery-day {
+        font-size: 48px;
+        padding-right: 20px;
+        width: 40px;
+    }
+    &__gallery-month {
+        font-size: 16px;
+        line-height: 1;
+        margin-top: 2px;
+        width: 100%;
+    }
+    &__gallery-time {
+        font-size: 18px;
+        width: 100%;
+    }
+    &__gallery-event {
+        width: 78%;
+    }
+    &__gallery-heading {
+        font-family: 'MinionPro-Bold', sans-serif;
+        font-size: 36px;
+        letter-spacing: 3px;
+        text-shadow: 0 2px 2px rgba(0,0,0,0.1);
+        text-transform: uppercase;
+    }
+    &__gallery-description {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+    &__gallery-btn-container {
+        margin-top: 15px;
+        width: 100%;
+    }
+    &__gallery-btn {
+        &:before,
+        &:after {
+            content: none;
+        }
+    }
+    &__gallery-img {
+        background-image: url("../images/events-gallery-img.jpg");
+        height: $events-gallery-height;
+        width: 100%;
+        &:before {
+            content: none;
+        }
+    }
+    &__date-container {
+        position: absolute;
+        overflow: hidden;
+        height: $events-date-container-height;
+        &:after {
+            content: "";
+            transform: rotate(30deg);
+            transform-origin: top right 0;
+            background-color: $link-gold;
+            position: absolute;
+            top: 0;
+            right: 0;
+            height: 1000px;
+            width: 1000px;
+        }
+        &_page {
+            top: 0;
+            left: 0;
+            width: 256px;
+        }
+        &_article {
+            bottom: 0;
+            left: 0;
+            width: 120px;
+        }
+    }
+    &__date {
+        display: flex;
+        align-items: center;
+        color: white;
+        font-family: 'MinionPro-Semibold', sans-serif;
+        text-shadow: 0 2px 2px rgba(0,0,0,0.1);
+        padding-left: 40px;
+        position: relative;
+        height: 100%;
+        z-index: 1;
+    }
+    &__date-day {
+        font-size: 48px;
+        padding-right: 10px;
+    }
+    &__date-month {
+        line-height: 1;
+        margin-top: 5px;
+    }
+    &__date-year {
+
+    }
+    &__date-time {
+        font-size: 18px;
+    }
+    &__articles-container {
+        padding-bottom: 40px;
+    }
+    &__articles {
+        padding: 90px 0 0 100px;
+    }
+    &__article {
+        margin-bottom: 30px;
+    }
+    &__article-date {
+        padding-left: 10px;
+    }
+    &__article-img-container {
+        background-image: url("../images/events-article-img.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-bottom: 40px;
+        position: relative;
+        height: $events-photo-height;
+    }
+    &__article-title {
+
+    }
+    &__article-link {
+        color: black;
+        text-decoration: none;
+        &:hover,
+        &:focus,
+        &:active,
+        &:visited {
+            color: black;
+        }
+    }
+    &__article-text {
+        font-family: 'MyriadPro-Light', sans-serif;
+        font-size: 15px;
+        margin: 15px 0 15px;
+    }
+    &__bottom-nav {
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 100px 50px 0;
+        width: 100%;
+    }
+    &__calendar-container {
+        background-image: url("../images/calendar-decor.png");
+        background-position: right bottom;
+        background-repeat: no-repeat;
+        padding: 0 0 130px 100px;
+    }
+    //184 318
+    &__calendar-title {
+        font-family: 'MinionPro-Bold', sans-serif;
+        font-size: 36px;
+        line-height: 1;
+        letter-spacing: 2px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    &__calendar {
+        .ui-widget.ui-widget-content {
+            border: none;
+        }
+        .ui-datepicker {
+            width: 340px;
+            th {
+                font-weight: 300;
+            }
+        }
+        .ui-datepicker-header {
+            background-color: transparent;
+            border: none;
+            padding-top: 0;
+            padding-bottom: 16px;
+            .ui-corner-all {
+                display: none;
+            }
+            .ui-datepicker-title {
+                font-family: 'MinionPro-Bold', sans-serif;
+                font-size: 36px;
+                line-height: 1;
+                letter-spacing: 2px;
+                text-align: center;
+                text-transform: uppercase;
+                margin: 0 auto;
+            }
+            .ui-datepicker-year {
+                display: none;
+            }
+        }
+        .ui-datepicker-calendar {
+            thead {
+                color: $text-light-gray;
+                font-family: "Constantia-Italic", sans-serif;
+                font-size: 16px;
+                font-weight: 300;
+                th {
+                    padding-bottom: 0;
+                }
+            }
+            tbody {
+                td {
+                    &.ui-datepicker-current-day {
+                        &.events__calendar-event {
+                            .ui-state-active {
+                                color: black;
+                                &:before {
+                                    content: "";
+                                    transform: translate(-50%,-50%);
+                                    border: 1px solid $text-gold;
+                                    border-radius: 50%;
+                                    position: absolute;
+                                    top: 50%;
+                                    left: 50%;
+                                    height: 30px;
+                                    width: 30px;
+                                }
+                                &:after {
+                                    content: none !important;
+                                }
+                            }
+                        }
+                    }
+                    &.events__calendar-event {
+                        .ui-state-default {
+                            &:after {
+                                content: "";
+                                transform: translateX(-50%);
+                                background-color: $text-gold;
+                                position: absolute;
+                                bottom: 8px;
+                                left: 50%;
+                                height: 1px;
+                                width: 12px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .ui-state-default {
+            background-color: transparent;
+            border: none;
+            font-family: "Constantia-Reg", sans-serif;
+            font-size: 14px;
+            margin: 0 auto;
+            padding: 0;
+            position: relative;
+            text-align: center;
+            line-height: 38px;
+            height: 38px;
+            width: 38px;
+        }
+        .ui-priority-secondary {
+            color: $text-light-gray;
+        }
+        .ui-state-active {
+            color: black;
+            /*&:before {
+                content: "";
+                transform: translate(-50%,-50%);
+                border: 1px solid $text-gold;
+                border-radius: 50%;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                height: 30px;
+                width: 30px;
+            }
+            &:after {
+                content: none !important;
+            }*/
+        }
+        .ui-state-highlight {
+            color: black; //$text-gold;
+            /*&:before {
+                content: "";
+                transform: translate(-50%,-50%);
+                border: 1px solid $text-gold;
+                border-radius: 50%;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                height: 30px;
+                width: 30px;
+            }
+            &:after {
+                content: none;
+            }*/
+        }
+    }
+}

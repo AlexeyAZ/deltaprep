@@ -1,0 +1,84 @@
+extends templates/layout
+block vars
+    - var title = 'Events page'
+
+block content
+    div.content
+        div.container.container_text.mb30
+            p.heading.heading_xxl.
+                events
+    div.container.mb80
+        div.gallery.events__gallery
+            div.gallery__item.events__gallery-item
+                div.gallery__text.events__gallery-text
+                    div.events__gallery-date
+                        div.events__gallery-date-item
+                            p.events__gallery-day.
+                                19
+                        div.events__gallery-date-item
+                            p.events__gallery-month.
+                                May
+                            p.events__gallery-time.
+                                5:00 p.m.
+                    div.events__gallery-event
+                        .p.events__gallery-heading.
+                            open house
+                        .p.events__gallery-description.
+                            The public is welcome and invited to join us at our Board Meetings. For your convenience, we have posted a downloadable version of our board postings, agendas, and minutes for your review here...
+                    div.events__gallery-btn-container
+                        a.btn-nav.events__gallery-btn(href="").
+                            show more
+                div.gallery__img.events__gallery-img
+    div.container.container_flex.events__articles-container.mb80
+        div.events__date-container.events__date-container_page
+            div.events__date
+                div.events__date-item
+                    p.events__date-day.
+                        19
+                div.events__date-item
+                    p.events__date-month.
+                        May
+                    p.events__date-year.
+                        2016
+        div.container__col.container__col_50.container__col_100.events__container-articles
+            div.events__articles
+                div.events__article
+                    div.events__article-img-container
+                        div.events__date-container.events__date-container_article
+                            div.events__date.events__article-date
+                                div.events__date-item
+                                    p.events__date-time.
+                                        5:00 p.m.
+                    div.link-heading
+                        a.events__article-link(href="").
+                            Information for the Public
+                    p.events__article-text.
+                        The public is welcome and invited to join us at our Board Meetings. For your convenience, we have posted a downloadable version of our board postings, agendas, and minutes for your review here...
+                    a.btn-nav.btn-nav_no-arrows.events__article-btn(href="").
+                        show more
+                div.events__article
+                    div.events__article-img-container
+                        div.events__date-container.events__date-container_article
+                            div.events__date.events__article-date
+                                div.events__date-item
+                                    p.events__date-time.
+                                        5:00 p.m.
+                    div.events__article-title
+                        a.link-heading(href="").
+                            Information for the Public
+                    p.events__article-text.
+                        The public is welcome and invited to join us at our Board Meetings. For your convenience, we have posted a downloadable version of our board postings, agendas, and minutes for your review here...
+                    a.btn-nav.btn-nav_no-arrows.events__article-btn(href="").
+                        show more
+        div.container__col.container__col_50.container__col_100
+            div.events__calendar-container
+                div.events__calendar
+        div.bottom-nav.events__bottom-nav
+            a.btn-nav.btn-nav_left(href="news.html").
+                news
+            div.bottom-nav__button-container
+                button.btn-rect
+                    span.btn-rect__text.
+                        load more
+            a.btn-nav.btn-nav_right(href="academics.html").
+                academics

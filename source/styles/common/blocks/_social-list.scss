@@ -1,0 +1,51 @@
+.social-list {
+  list-style: none;
+  &_header {
+    margin-top: 30px;
+  }
+  &__item {
+    border: 1px solid;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 2px;
+    height: $social-list-item-size;
+    width: $social-list-item-size;
+    &_header {
+      border-color: black;
+      color: $social-item-header;
+    }
+  }
+  &__link {
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    &_header-fb {
+        background-image: url("../images/fb-icon-red.png");
+    }
+    &_header-tw {
+        background-image: url("../images/tw-icon-red.png");
+    }
+    &_header-dr {
+        background-image: url("../images/dr-icon-red.png");
+    }
+    &_header-in {
+        background-image: url("../images/in-icon-red.png");
+    }
+    &_footer-fb {
+        background-image: url("../images/fb-icon-white.png");
+    }
+    &_footer-tw {
+        background-image: url("../images/tw-icon-white.png");
+    }
+    &_footer-dr {
+        background-image: url("../images/dr-icon-white.png");
+    }
+    &_footer-in {
+        background-image: url("../images/in-icon-white.png");
+    }
+  }
+}

@@ -1,0 +1,55 @@
+.gallery {
+    position: relative;
+    &:before {
+        content: "";
+        transform: rotate(30deg);
+        background-color: $link-gold;
+        position: absolute;
+        width: 2px;
+        z-index: 4;
+    }
+    &__item {
+        overflow: hidden;
+        position: relative;
+        &:before {
+            content: "";
+            transform: rotate(30deg);
+            background-color: $bg-gray;
+            border: 2px solid $line-light-gold;
+            position: absolute;
+            top: -350px;
+            left: -270px;
+            width: 1000px;
+            height: 1000px;
+            z-index: 2;
+        }
+    }
+    &__text {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        padding-left: 184px;
+        position: relative;
+        height: 100%;
+        z-index: 3;
+    }
+    &__img {
+        background-image: url("../images/gallery-img.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 1;
+        &:before {
+            content: "";
+            background-image: linear-gradient(to bottom right, $gallery-img-gradient, rgba(0,0,0,0));
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+        }
+    }
+}

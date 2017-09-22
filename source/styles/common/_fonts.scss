@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+@font-face {
+  font-family: 'Constantia-Reg';
+  src: url('../fonts/constantia-reg.eot');
+  src: url('../fonts/constantia-reg.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/constantia-reg.woff2') format('woff2'),
+  url('../fonts/constantia-reg.woff') format('woff'),
+  url('../fonts/constantia-reg.ttf') format('truetype'),
+  url('../fonts/constantia-reg.svg#sf_ui__textregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Constantia-Bold';
+  src: url('../fonts/constantia-bold.eot');
+  src: url('../fonts/constantia-bold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/constantia-bold.woff2') format('woff2'),
+  url('../fonts/constantia-bold.woff') format('woff'),
+  url('../fonts/constantia-bold.ttf') format('truetype'),
+  url('../fonts/constantia-bold.svg#sf_ui__textregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Constantia-Italic';
+  src: url('../fonts/constantia-italic.eot');
+  src: url('../fonts/constantia-italic.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/constantia-italic.woff2') format('woff2'),
+  url('../fonts/constantia-italic.woff') format('woff'),
+  url('../fonts/constantia-italic.ttf') format('truetype'),
+  url('../fonts/constantia-italic.svg#sf_ui__textregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Constantia-Italic-Bold';
+  src: url('../fonts/constantia-italic-bold.eot');
+  src: url('../fonts/constantia-italic-bold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/constantia-italic-bold.woff2') format('woff2'),
+  url('../fonts/constantia-italic-bold.woff') format('woff'),
+  url('../fonts/constantia-italic-bold.ttf') format('truetype'),
+  url('../fonts/constantia-italic-bold.svg#sf_ui__textregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Proxima-Nova-Light';
+  src: url('../fonts/proxima-nova-light.eot');
+  src: url('../fonts/proxima-nova-light.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/proxima-nova-light.woff2') format('woff2'),
+  url('../fonts/proxima-nova-light.woff') format('woff'),
+  url('../fonts/proxima-nova-light.ttf') format('truetype'),
+  url('../fonts/proxima-nova-light.otf') format('opentype'),
+  url('../fonts/proxima-nova-light.svg#sf_ui__textregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'MinionPro-Bold';
+  src: url('../fonts/minionpro-bold.eot');
+  src: url('../fonts/minionpro-bold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/minionpro-bold.woff2') format('woff2'),
+  url('../fonts/minionpro-bold.woff') format('woff'),
+  url('../fonts/minionpro-bold.ttf') format('truetype'),
+  url('../fonts/minionpro-bold.otf') format('opentype'),
+  url('../fonts/minionpro-bold.svg#sf_ui__textregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'MinionPro-Semibold';
+  src: url('../fonts/minionpro-semibold.eot');
+  src: url('../fonts/minionpro-semibold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/minionpro-semibold.woff2') format('woff2'),
+  url('../fonts/minionpro-semibold.woff') format('woff'),
+  url('../fonts/minionpro-semibold.ttf') format('truetype'),
+  url('../fonts/minionpro-semibold.otf') format('opentype'),
+  url('../fonts/minionpro-semibold.svg#sf_ui__textregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'MinionPro-SemiboldIt';
+  src: url('../fonts/minionpro-semiboldit.eot');
+  src: url('../fonts/minionpro-semiboldit.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/minionpro-semiboldit.woff2') format('woff2'),
+  url('../fonts/minionpro-semiboldit.woff') format('woff'),
+  url('../fonts/minionpro-semiboldit.ttf') format('truetype'),
+  url('../fonts/minionpro-semiboldit.otf') format('opentype'),
+  url('../fonts/minionpro-semiboldit.svg#sf_ui__textregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'MinionPro-It';
+  src: url('../fonts/minionpro-it.eot');
+  src: url('../fonts/minionpro-it.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/minionpro-it.woff2') format('woff2'),
+  url('../fonts/minionpro-it.woff') format('woff'),
+  url('../fonts/minionpro-it.ttf') format('truetype'),
+  url('../fonts/minionpro-it.otf') format('opentype'),
+  url('../fonts/minionpro-it.svg#sf_ui__textregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'MyriadPro-Light';
+  src: url('../fonts/myriadpro-light.eot');
+  src: url('../fonts/myriadpro-light.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/myriadpro-light.woff2') format('woff2'),
+  url('../fonts/myriadpro-light.woff') format('woff'),
+  url('../fonts/myriadpro-light.ttf') format('truetype'),
+  url('../fonts/myriadpro-light.otf') format('opentype'),
+  url('../fonts/myriadpro-light.svg#sf_ui__textregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

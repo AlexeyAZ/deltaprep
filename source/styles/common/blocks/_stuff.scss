@@ -1,0 +1,123 @@
+.stuff {
+    background-image: url("../images/stuff-long-line.png"), url("../images/stuff-short-line.png"), url("../images/stuff-long-line.png");
+    background-position: left bottom 200px, left bottom 100px, right bottom;
+    background-repeat: no-repeat;
+    padding-bottom: 40px;
+    &__container {
+        padding: 0 95px;
+    }
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+    &__search {
+        position: relative;
+        margin-bottom: 30px;
+        width: 48%;
+    }
+    &__search-input {
+        border: 1px solid $bg-gray;
+        border-radius: 2px;
+        box-sizing: border-box;
+        color: $text-gray;
+        outline: none;
+        font-family: 'Constantia-Italic', sans-serif;
+        font-size: 15px;
+        letter-spacing: 1px;
+        padding: 10px 30px 10px 15px;
+        width: 100%;
+    }
+    &__search-btn {
+        background-image: url("../images/search-icon.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 40px;
+    }
+    &__cards {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        justify-content: space-between;
+        width: 100%;
+    }
+    &__card {
+        background-color: $stuff-card-bg;
+        margin-bottom: 44px;
+        position: relative;
+        height: $staff-card-height;
+        width: 48%;
+        &_photo {
+            width: 100%;
+            &:before {
+                content: "";
+                display: block;
+                background-color: $stuff-card-photo-top-block-bg;
+                height: 10px;
+                width: 100%;
+            }
+            .stuff__card-person {
+                position: absolute;
+                top: 10px;
+                right: 0;
+                height: calc(100% - 10px);
+                width: 48%;
+            }
+        }
+    }
+    &__card-photo {
+        background-image: url("../images/stuff-photo.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute;
+        top: 10px;
+        left: 0;
+        height: calc(100% - 10px);
+        width: 48%;
+    }
+    &__card-person {
+        box-sizing: border-box;
+        padding: 20px 44px;
+        position: relative;
+        height: 100%;
+        width: 100%;
+    }
+    &__card-name {
+        line-height: 1;
+        margin-bottom: 0;
+        padding-left: 0;
+    }
+    &__card-skill {
+        color: $text-light-gray;
+        font-family: "Constantia-Italic", sans-serif;
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+    &__card-about {
+        padding-left: 0;
+    }
+    &__card-contacts {
+        font-family: 'Constantia-Bold', sans-serif;
+        position: absolute;
+        left: 44px;
+        bottom: 20px;
+    }
+    &__card-mail {
+        color: black;
+        text-decoration: none;
+        border-bottom: 1px solid $link-gold;
+        font-size: 14px;
+    }
+    &__bottom-nav {
+        padding-top: 0;
+    }
+}

@@ -1,0 +1,365 @@
+.main {
+    padding-bottom: 50px;
+    &__gallery {
+        height: $main-gallery-height;
+        &:before {
+            content: none;
+        }
+        .slick-list {
+            padding-bottom: 30px;
+        }
+    }
+    &__gallery-item-container {
+        position: relative;
+        height: 100%;
+    }
+    &__gallery-item-btn {
+        position: absolute;
+        bottom: -25px;
+        left: 68px;
+        padding-left: 40px;
+        padding-right: 40px;
+        min-width: 0;
+        white-space: nowrap;
+        z-index: 4;
+    }
+    &__gallery-item {
+        height: $main-gallery-height;
+        &:before {
+            background-color: $main-gallery-bg;
+            border: none;
+            left: calc(-60% + 40px);
+        }
+    }
+    &__gallery-description {
+        align-items: flex-start;
+        align-content: flex-start;
+        padding-left: 70px;
+        padding-top: 10px;
+        width: 400px;
+    }
+    &__gallery-heading {
+        font-family: "Constantia-Reg", sans-serif;
+        line-height: 1.2;
+        width: 400px;
+    }
+    &__gallery-title {
+        margin-bottom: 16px;
+        padding-left: 0;
+        width: 400px;
+    }
+    &__gallery-text {
+        padding-left: 0;
+        width: 300px;
+    }
+    &__gallery-img {
+        background-image: url("../images/main-slider-img.jpg");
+        height: $main-gallery-height;
+        width: 100%;
+        &:before {
+            content: none;
+        }
+    }
+    &__schools-container {
+        padding: 0 110px;
+    }
+    &__schools {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__schools-item {
+        background-repeat: no-repeat;
+        background-position: center top;
+        color: black;
+        text-align: center;
+        font-size: 21px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        text-decoration: none;
+        padding-top: 230px;
+        width: 33%;
+        &_elementary {
+            background-image: url("../images/main-elementary-school.png"), url("../images/main-triangle-mask.png");
+        }
+        &_middle {
+            background-image: url("../images/main-middle-school.png"), url("../images/main-triangle-mask.png");
+        }
+        &_hight {
+            background-image: url("../images/main-hight-school.png"), url("../images/main-triangle-mask.png");
+        }
+        &:hover {
+            .main__schools-text {
+                border-color: black;
+            }
+        }
+    }
+    &__schools-text {
+        border-bottom: 1px solid transparent;
+    }
+    &__schools-link {
+        border-bottom: 1px solid transparent;
+        color: black;
+        font-size: 21px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        text-decoration: none;
+        &:hover {
+            border-color: black;
+        }
+    }
+    &__news {
+        background-image: url("../images/main-news-decor.png");
+        background-repeat: no-repeat;
+        background-position: left top;
+        padding-top: 60px;
+    }
+    &__news-heading {
+        position: relative;
+    }
+    &__news-btn-nav-container {
+        bottom: 10px;
+        right: -30px;
+    }
+    &__news-gallery {
+        margin-top: 50px;
+        padding-left: 220px;
+    }
+    &__news-gallery-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: 60px;
+    }
+    &__news-gallery-img {
+        background-image: url("../images/events-article-img.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: $main-news-gallery-img-height;
+        width: $main-news-gallery-img-width;
+        min-width: $main-news-gallery-img-width;
+    }
+    &__news-gallery-text {
+        padding-left: 30px;
+    }
+    &__news-gallery-link {
+        font-family: 'Constantia-Italic', sans-serif;
+        text-decoration: none;
+        &:hover {
+            &:after {
+                content: "";
+                background-color: black;
+            }
+        }
+    }
+    &__news-gallery-article {
+        font-family: 'Constantia-Reg', sans-serif;
+    }
+    &__events {
+        padding-top: 20px;
+    }
+    &__events-heading {
+        position: relative;
+        padding-left: $padding-left-right-xl;
+        z-index: 5;
+    }
+    &__events-btn-nav-container {
+        position: absolute;
+        bottom: 10px;
+        right: 50px;
+    }
+    &__events-gallery {
+        margin-top: 50px;
+        &:before {
+            top: -190px;
+            left: calc(23% + 8px);
+            height: 500px;
+            width: 2px;
+        }
+        &:after {
+            content: "";
+            background-image: url("../images/main-events-decor.png");
+            background-position: center;
+            background-repeat: no-repeat;
+            position: absolute;
+            top: -30px;
+            right: 96px;
+            height: 384px;
+            width: 300px;
+            z-index: 2;
+        }
+    }
+    &__events-gallery-btn {
+        position: absolute;
+        bottom: -25px;
+        left: 68px;
+        padding-left: 40px;
+        padding-right: 40px;
+        min-width: 0;
+        z-index: 4;
+    }
+    &__events-gallery-item {
+        height: $main-events-gallery-height;
+        &:before {
+            background-color: $main-events-gallery-gold-bg;
+            top: -350px;
+            left: -870px;
+        }
+        &:after {
+            content: "";
+            transform: rotate(30deg);
+            background-color: white;
+            border: 2px solid $line-light-gold;
+            position: absolute;
+            top: -350px;
+            right: -800px;
+            width: 1000px;
+            height: 1000px;
+            z-index: 2;
+        }
+    }
+    &__events-gallery-text {
+        color: white;
+        padding: 20px 0 0 80px;
+        position: relative;
+        z-index: 4;
+        width: 68%;
+    }
+    &__events-gallery-heading {
+        font-family: 'Constantia-Bold', sans-serif;
+        font-size: 36px;
+        letter-spacing: 3px;
+        text-shadow: 0 2px 2px rgba(0,0,0,0.1);
+        text-transform: uppercase;
+    }
+    &__events-gallery-date {
+        font-family: 'Constantia-Reg', sans-serif;
+        display: flex;
+        text-shadow: 0 2px 2px rgba(0,0,0,0.1);
+        width: 100%;
+    }
+    &__events-gallery-date-item {
+        display: flex;
+        align-items: flex-start;
+        align-content: flex-start;
+        flex-wrap: wrap;
+    }
+    &__events-gallery-day {
+        font-size: 48px;
+        line-height: 1;
+        padding-right: 20px;
+        width: 40px;
+    }
+    &__events-gallery-month,
+    &__events-gallery-year,
+    &__events-gallery-time {
+        line-height: 1.5;
+        width: 100%;
+    }
+    &__events-gallery-month {
+        padding-top: 8px;
+    }
+    &__events-gallery-time {
+        font-size: 18px;
+        padding-top: 4px;
+    }
+    &__events-gallery-img {
+        background-image: url("../images/events-gallery-img.jpg");
+        height: $main-events-gallery-height;
+        width: 100%;
+        &:before {
+            content: none;
+        }
+    }
+
+    /*
+    &__schools-container {
+        padding: 0 120px;
+    }
+    &__schools-images {
+        display: flex;
+        justify-content: space-between;
+        height: 215px;
+        overflow: hidden;
+    }
+    &__schools-item {
+        position: relative;
+        width: 31%;
+        &:before {
+            content: "";
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 0 100px 176px 100px;
+            border-color: transparent transparent #007bff transparent;
+            position: absolute;
+            top: 26px;
+            left: 35px;
+            //z-index: 100;
+        }
+    }
+    &__schools-links {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 12px;
+    }
+    &__schools-links-item {
+        text-align: center;
+        width: 31%;
+    }
+    &__schools-link {
+        border-bottom: 1px solid transparent;
+        color: black;
+        font-size: 21px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        text-decoration: none;
+        &:hover {
+            border-color: black;
+        }
+    }
+    &__triangle-img {
+        margin-top: 53px;
+        margin-left: 49px;
+    }
+    &__triangle-img-container {
+        //box-shadow: 0 0 10px black;
+        top: 10px;
+        left: 10px;
+        height: $main-triangle-img-container-size;
+        width: $main-triangle-img-container-size;
+    }
+    &__triangle-img-border {
+        border: 1px solid red;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: $main-triangle-img-container-size + 35px;
+        height: $main-triangle-img-container-size + 35px;
+        margin: 0;
+        display: block;
+        overflow: hidden;
+        transform: skew(15deg, 15deg) translate3d(0,0,0);
+        &:before {
+            content: "";
+            transform: rotate(-45deg);
+            background-color: red;
+            position: absolute;
+            top: 25px;
+            left: -90px;
+            width: 600px;
+            height: 1px;
+        }
+    }
+    &__triangle-img-photo {
+        background-image: url("../images/events-gallery-img.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        margin-top: 46px;
+        margin-left: 35px;
+        height: $main-triangle-img-container-size;
+        width: $main-triangle-img-container-size + 30px;
+    }
+    */
+}

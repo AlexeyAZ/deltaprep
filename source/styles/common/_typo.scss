@@ -1,0 +1,96 @@
+.text_color_gray {
+    color: $text-gray;
+}
+.text {
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    position: relative;
+    z-index: 1;
+    &_date {
+        color: $text-gray;
+        font-family: "MinionPro-It", sans-serif;
+        font-size: 17px;
+        line-height: 1;
+        padding-left: 0;
+    }
+    &_news {
+        font-family: 'MyriadPro-Light', sans-serif;
+        font-size: 15px;
+        padding-left: 0;
+        margin: 15px 0 15px;
+    }
+    &_bold {
+        font-family: 'Constantia-Bold', sans-serif;
+    }
+}
+.heading {
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    &_xxl {
+        font-size: 78px;
+        line-height: 1;
+    }
+    &_l {
+        font-family: 'MinionPro-Bold', sans-serif;
+        font-size: 36px;
+        line-height: 1;
+        letter-spacing: 3px;
+        margin-bottom: 20px;
+    }
+    &_m {
+        font-size: 22px;
+        line-height: 1;
+        margin-bottom: 30px;
+        padding-left: 10px;
+    }
+    &_double-color {
+        display: inline-block;
+        background: linear-gradient(-60deg, $link-gold 0%, $link-gold 56%, black 44%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+.title {
+    font-family: "Constantia-Italic", sans-serif;
+    font-size: 22px;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+    padding-left: 5px;
+    &_l {
+        font-size: 28px;
+    }
+}
+
+.link-heading {
+    color: black;
+    display: inline-block;
+    font-family: 'MinionPro-SemiboldIt', sans-serif;
+    font-size: 28px;
+    line-height: 1;
+    letter-spacing: 1px;
+    text-decoration: none;
+    position: relative;
+    &:after {
+        background-color: $link-gold;
+        position: absolute;
+        left: 0;
+        bottom: 1px;
+        height: 1px;
+        width: 100%;
+    }
+    &:hover {
+        &:after {
+            content: "";
+        }
+    }
+}
+.quote {
+    font-family: "Constantia-Italic", sans-serif;
+    font-size: 22px;
+    max-width: 450px;
+}
+.ta-center {
+    text-align: center;
+}

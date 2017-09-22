@@ -1,0 +1,21 @@
+doctype html
+- var title = 'Project title'
+
+block vars
+
+html.no-js(lang="")
+    head
+        meta(charset="utf-8")
+        meta(name="description", content="")
+        meta(name="viewport", content="width=device-width, initial-scale=1, minimal-ui")
+        title #{title}
+        link(rel="stylesheet", href="styles/vendor.css")
+        link(rel="stylesheet", href="styles/main.css")
+    body
+        div.wrapper
+            include header
+            block content
+        include footer
+        script(src="scripts/vendor.js")
+        script(src="scripts/main.js")
+        block scripts

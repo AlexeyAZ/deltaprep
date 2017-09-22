@@ -1,0 +1,69 @@
+.container {
+    position: relative;
+    &_flex {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+        align-content: flex-start;
+    }
+    &_text {
+        padding: 0 $padding-right-xl 0 $padding-left-right-xl;
+    }
+    &_quote {
+        background-image: url("../images/about-decor-line.png");
+        background-position: left bottom;
+        background-repeat: no-repeat;
+        padding: 60px 0 80px 184px;
+        overflow: hidden;
+        line-height: 1.5;
+        &:before {
+            content: none;
+            transform-origin: left bottom 0;
+            transform: rotate(30deg);
+            background-color: $line-light-gold;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            height: 1000px;
+            width: 2px;
+        }
+    }
+    &__col {
+        &_50 {
+            width: 50%;
+        }
+        &_80 {
+            max-width: 80%;
+            width: 80%;
+        }
+    }
+    &__item {
+        box-sizing: border-box;
+        &_text {
+            padding-left: $padding-left-right-xl;
+            max-width: 65%;
+            width: 65%;
+        }
+        &_text-half {
+            padding-left: $padding-left-right-xl;
+            max-width: 35%;
+            width: 35%;
+        }
+        &_sidebar {
+            min-width: 35%;
+            width: 35%;
+        }
+        &_full {
+            //min-width: 35%;
+            width: 100%;
+        }
+        &_video {
+            padding: 30px 60px 0;
+            width: 100%;
+        }
+        &_enroll {
+            width: 100%;
+        }
+    }
+}

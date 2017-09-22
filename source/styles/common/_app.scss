@@ -1,0 +1,15 @@
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body {
+  background-color: $body-bg;
+  background-image: url("../images/body-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 100% auto;
+  font-family: "Constantia-Reg", sans-serif;
+  line-height: 1.5;
+  padding: 22px 0 40px;
+  min-width: $body-min-width;
+}

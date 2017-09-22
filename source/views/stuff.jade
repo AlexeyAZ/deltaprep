@@ -1,0 +1,71 @@
+extends templates/layout
+block vars
+    - var title = 'Stuff page'
+
+block content
+    div.content.stuff
+        div.container.container_text.stuff__container
+            div.stuff__top
+                p.heading.heading_xxl.
+                    stuff
+                div.stuff__search
+                    input.stuff__search-input(placeholder="Enter name or position")
+                    button.stuff__search-btn
+            div.stuff__cards
+                //div.stuff__card.stuff__card_photo
+                    div.stuff__card-photo
+                    div.stuff__card-person
+                        p.title.title_l.stuff__card-name.
+                            Adam H.Holcomb
+                        p.stuff__card-skill.
+                            Dean
+                        p.text.stuff__card-about.
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Laboris nisi ut aliquip ex ea commodo consequat.
+                        div.stuff__contacts
+                            p.stuff__phone.
+                                313 - 242 - 1500
+                            a.stuff__mail(href="mailto:lcuffie@diachampion.org").
+                                lcuffie@diachampion.org
+                //div.stuff__card
+                    div.stuff__card-person
+                        p.title.title_l.stuff__card-name.
+                            Adam H.Holcomb
+                        p.stuff__card-skill.
+                            Dean
+                        p.text.stuff__card-about.
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Laboris nisi ut aliquip ex ea commodo consequat.
+                        div.stuff__contacts
+                            p.stuff__phone.
+                                313 - 242 - 1500
+                            a.stuff__mail(href="mailto:lcuffie@diachampion.org").
+                                lcuffie@diachampion.org
+        div.bottom-nav.stuff__bottom-nav
+            a.btn-nav.btn-nav_left(href="parents.html").
+                for parents
+            div.bottom-nav__button-container
+                button.btn-rect
+                    span.btn-rect__text.
+                        load more
+            a.btn-nav.btn-nav_right(href="contacts.html").
+                contacts
+    div#stuffTemplate(type="stuff-template" style="display:none")
+        div.stuff__card
+            div.stuff__card-person
+                p.title.title_l.stuff__card-name
+                p.stuff__card-skill
+                p.text.stuff__card-about
+                div.stuff__card-contacts
+                    p.stuff__card-phone
+                    a.stuff__card-mail
+    div#stuffPhotoTemplate(type="stuff-template" style="display:none")
+        div.stuff__card.stuff__card_photo
+            div.stuff__card-photo
+            div.stuff__card-person
+                p.title.title_l.stuff__card-name
+                p.stuff__card-skill
+                p.text.stuff__card-about
+                div.stuff__card-contacts
+                    p.stuff__card-phone
+                    a.stuff__card-mail
+
+

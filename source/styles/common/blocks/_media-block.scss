@@ -1,0 +1,87 @@
+.media-block {
+    position: relative;
+    height: $media-block-height;
+    width: $media-block-width;
+    &_big-img {
+        &:before {
+            content: "";
+            background-image: url("../images/open-news-photo-decor.png");
+            background-position: center;
+            background-repeat: no-repeat;
+            position: absolute;
+            top: -300px;
+            right: -360px;
+            height: 361px;
+            width: 267px;
+        }
+    }
+    &_video {
+        &:before {
+            content: "";
+            background-image: url("../images/video-decor.png");
+            background-position: center;
+            background-repeat: no-repeat;
+            position: absolute;
+            top: -300px;
+            right: 0;
+            height: 361px;
+            width: 246px;
+        }
+    }
+    &__item {
+        position: absolute;
+        height: calc(100% - 30px);
+        width: calc(100% - 30px);
+        &_img {
+            background-image: url("../images/video-img.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            top: 0;
+            right: 0;
+        }
+        &_big-img {
+            background-image: url("../images/video-img.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            left: 30px;
+            bottom: 30px;
+            height: $media-block-big-img-height;
+            width: $media-block-big-img-width;
+            z-index: 2;
+        }
+        &_border {
+            border: 2px solid $link-gold;
+            bottom: 0;
+            left: 0;
+        }
+        &_video {
+            cursor: pointer;
+            &:before {
+                content: "";
+                transform: translate(-50%, -50%);
+                box-sizing: border-box;
+                border: 2px solid $link-gold;
+                border-radius: 50%;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                height: $media-play-btn-size;
+                width: $media-play-btn-size;
+            }
+            &:after {
+                content: "";
+                transform: translate(-50%, -50%);
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                width: 0;
+                height: 0;
+                border-style: solid;
+                border-width: 13px 0 13px 22px;
+                border-color: transparent transparent transparent $link-gold;
+            }
+        }
+    }
+}

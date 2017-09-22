@@ -1,0 +1,54 @@
+.sidebar-links {
+    margin-top: 40px;
+    padding: 0 20px 0 110px;
+    &__item {
+        margin-bottom: 120px;
+        padding-top: 30px;
+        background-position: left top;
+        background-repeat: no-repeat;
+        &_documents {
+            background-image: url("../images/documents-icon.png");
+        }
+        &_links {
+            background-image: url("../images/useful-links-icon.png");
+        }
+        &_articles {
+            background-image: url("../images/open-news-sidebar-icon.png");
+        }
+    }
+    &__heading {
+        padding-left: 20px;
+    }
+    &__list-point {
+        position: relative;
+        margin-bottom: 20px;
+        padding-left: 10px;
+        &:before {
+            content: "";
+            transform: translateY(-50%);
+            background-color: $link-gold;
+            position: absolute;
+            top: 50%;
+            left: 0;
+            height: 2px;
+            width: 100%;
+            z-index: 1;
+        }
+    }
+    &__list-link {
+        background-color: white;
+        color: black;
+        font-size: 15px;
+        text-decoration: none;
+        display: inline-block;
+        padding: 0 10px;
+        position: relative;
+        z-index: 2;
+        &:hover {
+            color: black;
+        }
+    }
+    &__schools-item {
+        margin-bottom: 25px;
+    }
+}

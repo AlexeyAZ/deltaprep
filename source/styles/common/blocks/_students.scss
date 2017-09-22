@@ -1,0 +1,7 @@
+.students {
+    &__heading-double-color {
+        background: linear-gradient(-60deg, $link-gold 0%, $link-gold 65%, black 35%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}

@@ -1,0 +1,57 @@
+extends templates/layout
+block vars
+    - var title = 'Contacts page'
+
+block content
+    div.content.contacts
+        div.container.container_text.mb30.news__container.contacts__container
+            p.heading.heading_xxl.
+                contacts
+        div.container
+            div.gallery.contacts__gallery
+                div.gallery__item.contacts__gallery-item
+                    div.gallery__text.contacts__gallery-contacts
+                        ul.contacts__gallery-list
+                            li.contacts__gallery-list-item.contacts__gallery-list-item_location.
+                                3550 John C. Lodge Detroit, MI 48201
+                            li.contacts__gallery-list-item.contacts__gallery-list-item_phone.
+                                (313) 638-1444 or (313) 603-3453
+                            li.contacts__gallery-list-item.contacts__gallery-list-item_mail
+                                a.contacts__gallery-list-link(href="mailto:info@detroitdeltaprep.org").
+                                    info@detroitdeltaprep.org
+                    div#contacts-map.contacts__gallery-map
+                        //iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2948.923277684698!2d-83.06929888454417!3d42.344159079187975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8824d2b26058c78d%3A0xa1246fa84f11793!2zMzU1MCBKb2huIEMgTG9kZ2UgRnd5LCBEZXRyb2l0LCBNSSA0ODIwMSwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1481626275663" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen)
+        div.container.contacts__form-container
+            p.text.contacts__form-title.
+                All fields are required. Write message and we will contact you.
+            form.contacts__form
+                div.contacts__form-fields.mb40
+                    div.contacts__form-fields-item
+                        input.contacts__form-input(placeholder="Name" required)
+                        input.contacts__form-input(type="Email" placeholder="Email" required)
+                    div.contacts__form-fields-item
+                        textarea.contacts__form-textarea(placeholder="Message" required)
+                div.contacts__form-btn-container
+                    button.btn-rect.contacts__form-btn.
+                        send
+    script.
+        function initMap() {
+            var myLatLng = {lat: 42.344246, lng: -83.067376};
+
+            var mapOptions = {
+                zoom: 17,
+                center: myLatLng,
+                disableDefaultUI: true,
+                scrollwheel: false,
+            };
+
+            var map = new google.maps.Map(document.getElementById('contacts-map'), mapOptions);
+
+            var marker = new google.maps.Marker({
+                position: myLatLng,
+                map: map
+            });
+        }
+    script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyANhtoMMSXINYeV8WRpXafITU6XmiNTWG4&callback=initMap" async defer)
+
+

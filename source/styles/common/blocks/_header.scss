@@ -1,0 +1,74 @@
+.header {
+    padding: 30px ($padding-left-right-xl + 10px) 30px $padding-left-right-xl;
+    &__top {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item {
+        display: flex;
+        position: relative;
+    }
+    &__btn {
+        background-color: transparent;
+        outline: none;
+        display: none;
+        align-self: center;
+        height: $header-btn-size;
+        width: $header-btn-size;
+    }
+    &__social-list {
+        overflow: hidden;
+    }
+    &__logo-container {
+        margin-right: 50px;
+    }
+    &__head-container {
+        &_desktop {
+            display: block;
+        }
+        &_mobile {
+            display: none;
+        }
+    }
+    &__head {
+        font-family: "Constantia-Bold", sans-serif;
+        font-size: 25px;
+        margin-top: 20px;
+    }
+    &__title {
+        font-family: "Constantia-Italic", sans-serif;
+        font-size: 18px;
+        letter-spacing: 1px;
+        margin: 5px;
+    }
+    &__nav {
+        overflow: hidden;
+        padding-top: 10px;
+        text-align: center;
+    }
+    &__nav-list {
+        display: inline-block;
+    }
+    &__nav-item {
+        display: inline-block;
+        margin: 0 12px;
+        &_active {
+            .header__nav-link {
+                border-color: $text-gold;
+            }
+        }
+    }
+    &__nav-link {
+        border-bottom: 2px solid transparent;
+        transition: 0.3s;
+        color: $text-gold;
+        font-size: 13px;
+        text-decoration: none;
+        text-transform: uppercase;
+        padding-bottom: 2px;
+        position: relative;
+        &:hover {
+            border-color: $text-gold;
+        }
+    }
+}

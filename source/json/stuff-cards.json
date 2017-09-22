@@ -1,0 +1,34 @@
+[
+    {
+        "photo": "../images/stuff-photo.jpg",
+        "name": "Name1",
+        "skill": "Skill1",
+        "about": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Laboris nisi ut aliquip ex ea commodo consequat.1",
+        "phone": "313 - 242 - 1500 1",
+        "mail": "lcuffie@diachampion.org 1"
+    },
+    {
+        "photo": "",
+        "name": "Name2",
+        "skill": "Skill2",
+        "about": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Laboris nisi ut aliquip ex ea commodo consequat.2",
+        "phone": "313 - 242 - 1500 2",
+        "mail": "lcuffie@diachampion.org 2"
+    },
+    {
+        "photo": "",
+        "name": "Name3",
+        "skill": "Skill3",
+        "about": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Laboris nisi ut aliquip ex ea commodo consequat.2",
+        "phone": "313 - 242 - 1500 2",
+        "mail": "lcuffie@diachampion.org 2"
+    },
+    {
+        "photo": "",
+        "name": "Name4",
+        "skill": "Skill4",
+        "about": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Laboris nisi ut aliquip ex ea commodo consequat.2",
+        "phone": "313 - 242 - 1500 2",
+        "mail": "lcuffie@diachampion.org 2"
+    }
+]

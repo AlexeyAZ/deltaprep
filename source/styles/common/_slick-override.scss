@@ -1,0 +1,31 @@
+.slick-arrow {
+    z-index: 10;
+}
+.slick-next {
+    right: 20px;
+    &:before {
+        content: "";
+        transform: rotate(45deg) translateY(-50%);
+        border-top: 2px solid $gallery-arrow;
+        border-right: 2px solid $gallery-arrow;
+        position: absolute;
+        top: 50%;
+        right: calc(50% + 2px);
+        height: $gallery-arrow-size;
+        width: $gallery-arrow-size;
+    }
+}
+.slick-prev {
+    left: 20px;
+    &:before {
+        content: "";
+        transform: rotate(45deg) translateY(-50%);
+        border-left: 2px solid $gallery-arrow;
+        border-bottom: 2px solid $gallery-arrow;
+        position: absolute;
+        top: 50%;
+        left: calc(50% + 2px);
+        height: $gallery-arrow-size;
+        width: $gallery-arrow-size;
+    }
+}

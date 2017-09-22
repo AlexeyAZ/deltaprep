@@ -1,0 +1,56 @@
+.about {
+    &__container-1 {
+        z-index: 5;
+    }
+    &__gallery {
+        &:before {
+            content: "";
+            top: -350px;
+            left: 77%;
+            height: 850px;
+            width: 2px;
+        }
+    }
+    &__gallery-item {
+        height: $about-gallery-height;
+    }
+    &__gallery-img {
+        height: $about-gallery-height;
+        width: $about-gallery-height + 40px;
+    }
+    &__enroll-text {
+        max-width: 580px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    &__container-enroll {
+        background-image: url("../images/about-decor-line.png"), url("../images/about-decor-line.png");
+        background-position: right 20px, right 60px bottom 10px;
+        background-repeat: no-repeat;
+        overflow: hidden;
+        padding-top: 80px;
+        padding-bottom: 90px;
+        &:before {
+            content: none;
+            transform-origin: right top 0;
+            transform: rotate(30deg);
+            background-color: $line-light-gold;
+            position: absolute;
+            right: -10px;
+            top: 10px;
+            height: 400px;
+            width: 2px;
+        }
+        &:after {
+            content: none;
+            transform-origin: left bottom 0;
+            transform: rotate(30deg);
+            background-color: $line-light-gold;
+            position: absolute;
+            right: 300px;
+            bottom: 0;
+            height: 400px;
+            width: 2px;
+        }
+    }
+}

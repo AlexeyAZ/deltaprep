@@ -1,0 +1,39 @@
+.academics {
+    padding-bottom: 50px;
+    &__heading-double-color {
+        background: linear-gradient(-60deg, $link-gold 0%, $link-gold 58%, black 42%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    &__sidebar-links {
+        margin-top: 0;
+    }
+    &__sidebar-links-schools {
+        margin-bottom: 120px;
+    }
+    &__schools-list-mobile {
+        display: none;
+        margin: 40px 0;
+    }
+    &__photo {
+        margin-bottom: 40px;
+    }
+    &__media-block {
+        margin-top: 70px;
+        margin-bottom: 80px;
+        margin-left: -15px;
+    }
+    &__media-block-big {
+        margin-top: 50px;
+        margin-left: 60px;
+    }
+    &__media-block-img {
+        z-index: 2;
+    }
+    &__container-enroll {
+        padding-bottom: 0;
+    }
+    &__bottom-nav {
+        padding-top: 40px;
+    }
+}

@@ -1,0 +1,114 @@
+.btn-rect {
+    background-color: $btn-rect-bg;
+    border: none;
+    cursor: pointer;
+    color: white;
+    display: inline-block;
+    outline: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 13px 29px;
+    position: relative;
+    overflow: hidden;
+    min-width: 236px;
+    white-space: nowrap;
+    &:before {
+        content: "";
+        transform: rotate(-30deg);
+        background-color: $btn-rect-light-bg;
+        position: absolute;
+        top: 0;
+        left: -65px;
+        height: 100px;
+        width: 100px;
+    }
+    &__text {
+        position: relative;
+        z-index: 1;
+    }
+}
+/*
+.btn-nav {
+    color: $btn-nav;
+    font-size: 15px;
+    line-height: 1;
+    text-decoration: none;
+    text-transform: uppercase;
+    vertical-align: middle;
+    &:before,
+    &:after {
+        background-image: url("../images/btn-nav-arrow.png");
+        background-repeat: no-repeat;
+        display: inline-block;
+        height: 9px;
+        width: 17px;
+    }
+    &_no-arrows {
+        &:before,
+        &:after {
+            content: none;
+        }
+    }
+    &_right {
+        &:after {
+            content: "";
+            background-position: center;
+            margin-left: 18px;
+        }
+    }
+    &_left {
+        &:before {
+            content: "";
+            transform: rotate(180deg);
+            background-position: center;
+            margin-right: 18px;
+        }
+    }
+}
+*/
+.btn-nav {
+    color: $btn-nav;
+    font-size: 15px;
+    line-height: 1;
+    text-decoration: none;
+    text-transform: uppercase;
+    vertical-align: middle;
+    &:before,
+    &:after {
+        background-image: url("../images/btn-nav-arrow.png");
+        background-repeat: no-repeat;
+        display: inline-block;
+        height: 9px;
+        width: 17px;
+    }
+    &__text {
+        display: inline-block;
+        vertical-align: middle;
+    }
+    &_no-arrows {
+        &:before,
+        &:after {
+            content: none;
+        }
+    }
+    &_right {
+        &:after {
+            content: "";
+            background-position: center;
+            margin-left: 18px;
+        }
+    }
+    &_left {
+        &:before {
+            content: "";
+            transform: rotate(180deg);
+            background-position: center;
+            margin-right: 18px;
+        }
+    }
+}
+.btn-nav-container {
+    position: absolute;
+}
