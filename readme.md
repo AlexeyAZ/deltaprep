@@ -1,1 +1,0 @@
-# Karamel default gulp project #

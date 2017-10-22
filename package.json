@@ -1,12 +1,12 @@
 {
-  "name": "grphm.karamel.gulp",
+  "name": "name",
   "version": "0.9.0",
-  "description": "Default gulp project for grapheme.karamel team",
+  "description": "Default gulp project",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Konstantin Durnev",
+  "author": "",
   "license": "ISC",
   "devDependencies": {
     "babel-core": "^6.7.2",
